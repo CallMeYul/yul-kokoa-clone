@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap");
 @import "reset.css";
 @import "status-bar.css";
+@import "variables.css";
 
 body {
   background-color: gainsboro;
@@ -21,4 +22,23 @@ body {
 .welcome-header__text {
   width: 70%;
   opacity: 0.6;
+}
+/* 로그인 폼 (버튼 모양으로 재 스타일링 할 것)*/
+#login-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 30px;
+}
+#login-form input {
+  padding: 15px 0px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+  margin-bottom: 25px;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: rgba(0, 0, 0, 0.4);
 }
