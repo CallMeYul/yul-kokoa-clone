@@ -2,10 +2,20 @@
 @import "reset.css";
 @import "status-bar.css";
 @import "variables.css";
+@font-face {
+  font-family: "IBMPlexSansKR-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
+*,
+body {
+  font-family: "IBM Plex Mono", "IBMPlexSansKR-Regular", monospace;
+}
 body {
   background-color: gainsboro;
-  font-family: "IBM Plex Mono", monospace;
 }
 
 .welcome-header {
@@ -31,18 +41,23 @@ body {
   margin: 0px 30px;
 }
 #login-form input {
-  padding: 15px 0px;
+  padding: 15px 20px;
   border: none;
   font-size: 17px;
   margin-bottom: 25px;
 }
 
 #login-form input:not([type="submit"]) {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: var(--charcoal);
   transition: border-color 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3) inset,
+    0.5px 0px 0px 2px rgba(0, 0, 0, 0.9) inset,
+    0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  color: var(--green);
 }
 #login-form input::placeholder {
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 #login-form input:focus {
   border-color: var(--charcoal);
