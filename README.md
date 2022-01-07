@@ -23,3 +23,5 @@
   2. #6.9 components / screens css 폴더 생성
   3. #6.10 friends page create & Navigation Bar markup
   4. #6.11 Navigation Bar css styling
+  5. #6.13 Nav noti css styling
+  6. #6.14 Screen Header create & styling
