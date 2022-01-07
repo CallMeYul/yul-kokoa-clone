@@ -21,3 +21,4 @@
 - **01.07**
   1. 한글 웹 폰트 추가
   2. #6.9 components / screens css 폴더 생성
+  3. #6.10 friends page create & Navigation Bar
