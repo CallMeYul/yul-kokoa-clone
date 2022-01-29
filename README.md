@@ -28,3 +28,4 @@
 - **01.29**
   1. #6.15 Friends Screen css styling
   2. #6.16 User Component styling 1
+  3. #6.17 User Component styling 2
