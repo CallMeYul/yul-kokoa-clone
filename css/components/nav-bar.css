@@ -20,14 +20,6 @@
   position: relative;
 }
 .nav__noti {
-  background-color: var(--red);
-  color: wheat;
-  width: 25px;
-  height: 25px;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 27px;
   top: -10px;

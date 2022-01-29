@@ -31,3 +31,4 @@
   3. #6.17 User Component styling 2
   4. #6.18 Friends Screen css styling 2
   5. #6.19 Chats Screen create
+  6. #6.20 Chats Screen css styling
