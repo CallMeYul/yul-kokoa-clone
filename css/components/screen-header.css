@@ -6,6 +6,7 @@
 }
 .screen-header__title {
   font-size: 32px;
+  font-weight: 700;
 }
 .screen-header__icons span {
   margin-left: 20px;
