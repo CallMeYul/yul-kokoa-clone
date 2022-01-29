@@ -11,6 +11,7 @@
   font-weight: 700;
 }
 .screen-header__icons span {
+  position: relative;
   margin-left: 20px;
   text-shadow: 0px 1px 1px rgba(228, 228, 228, 0.7);
 }

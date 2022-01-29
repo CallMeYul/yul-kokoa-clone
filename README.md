@@ -32,3 +32,4 @@
   4. #6.18 Friends Screen css styling 2
   5. #6.19 Chats Screen create
   6. #6.20 Chats Screen css styling
+  7. point, badge css styling
