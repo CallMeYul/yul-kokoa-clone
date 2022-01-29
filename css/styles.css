@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap");
 @import "reset.css";
 @import "variables.css";
-@import "friends.css";
 
 /* Components */
 @import "components/status-bar.css";
@@ -9,6 +8,7 @@
 @import "components/screen-header.css";
 
 /* Screens */
+@import "screens/friends.css";
 @import "screens/login.css";
 @font-face {
   font-family: "IBMPlexSansKR-Regular";
@@ -24,4 +24,5 @@ body {
 }
 body {
   background-color: gainsboro;
+  color: var(--charcoal);
 }
