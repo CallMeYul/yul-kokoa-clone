@@ -25,3 +25,6 @@
   4. #6.11 Navigation Bar css styling
   5. #6.13 Nav noti css styling
   6. #6.14 Screen Header create & styling
+- **01.29**
+  1. #6.15 Friends Screen css styling
+  2. #6.16 User Component styling 1
