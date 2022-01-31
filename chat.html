@@ -41,6 +41,15 @@
     <main class="main-screen main-chat">
       <div class="chat__timestamp">Tuesday, June 20, 1994</div>
 
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">console.log(Crash)</span>
+            <span class="message__time">19:94</span>
+          </div>
+        </div>
+      </div>
+
       <div class="message-row">
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpN0Snw5kYfKxSDc9iciXLTg9YLxNrCB0Blg&usqp=CAU"
@@ -48,21 +57,25 @@
         <div class="message-row__content">
           <span class="message__author">Crash</span>
           <div class="message__info">
-            <span class="message__bubble">Null</span>
-            <span class="message__time">19:94</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="message-row message-row--own">
-        <div class="message-row__content">
-          <div class="message__info">
-            <span class="message__bubble">Null</span>
+            <span class="message__bubble">undefined</span>
             <span class="message__time">19:94</span>
           </div>
         </div>
       </div>
     </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message. . ." />
+        <i class="far fa-smile fa-lg"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <script
       src="https://kit.fontawesome.com/50dae95839.js"

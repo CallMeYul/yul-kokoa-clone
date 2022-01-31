@@ -75,3 +75,76 @@
 .message-row--own .message__info {
   flex-direction: row-reverse;
 }
+
+.reply {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 25px;
+  box-sizing: border-box;
+}
+
+.reply i {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.reply__column:first-child {
+  width: 10%;
+}
+.reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 4px;
+}
+.reply__column:last-child > i {
+  right: 40px;
+  top: 9px;
+  color: white;
+}
+
+.reply__column button {
+  background-color: white;
+  border: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply__column button i {
+  opacity: 1;
+}
+
+.reply input {
+  border-radius: 50px;
+  background-color: var(--charcoal);
+  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3) inset,
+    0.5px 0px 0px 2px rgba(0, 0, 0, 0.9) inset,
+    0px 0px 0px 1px rgba(0, 0, 0, 0.3);
+  color: var(--green);
+  padding: 15px 20px;
+
+  height: 30px;
+  width: 100%;
+}
+.reply input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+.reply input:focus {
+  background: lightblue;
+  color: var(--charcoal);
+}
