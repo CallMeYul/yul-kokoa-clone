@@ -9,11 +9,13 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/point.css";
+@import "components/icon-row.css";
 
 /* Screens */
 @import "screens/login.css";
 @import "screens/friends.css";
 @import "screens/find.css";
+@import "screens/more.css";
 @font-face {
   font-family: "IBMPlexSansKR-Regular";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff")
@@ -32,4 +34,7 @@ body {
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
+}
+.opacity0 {
+  opacity: 0;
 }

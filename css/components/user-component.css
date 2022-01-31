@@ -2,7 +2,9 @@
   justify-content: space-between;
   margin-bottom: 15px;
 }
-
+.user-component h6 i {
+  color: var(--green);
+}
 .main-screen .user-component:nth-of-type(even) {
   border-top: var(--main-border);
   padding-top: 15px;
