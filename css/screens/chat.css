@@ -15,10 +15,27 @@
   background-color: inherit;
   z-index: 2;
 }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: none;
+  }
+  1% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .main-chat {
   display: flex;
   flex-direction: column;
   align-items: center;
+  animation: fadeIn 0.5s ease-out;
 }
 
 .chat__timestamp {
@@ -86,6 +103,7 @@
   align-items: center;
   padding: 5px 25px;
   box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
 }
 
 .reply i {
@@ -104,12 +122,12 @@
 .reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: 3px;
-  top: 4px;
+  right: 2px;
+  top: 13px;
 }
 .reply__column:last-child > i {
   right: 40px;
-  top: 9px;
+  top: 19px;
   color: white;
 }
 
@@ -129,16 +147,14 @@
 }
 
 .reply input {
+  padding: 15px 20px;
   border-radius: 50px;
   background-color: var(--charcoal);
-  transition: color 0.2s ease-in-out, background 0.2s ease-in-out;
+  transition: all 0.4s ease-in-out;
   box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3) inset,
     0.5px 0px 0px 2px rgba(0, 0, 0, 0.9) inset,
     0px 0px 0px 1px rgba(0, 0, 0, 0.3);
   color: var(--green);
-  padding: 15px 20px;
-
-  height: 30px;
   width: 100%;
 }
 .reply input::placeholder {
@@ -147,4 +163,23 @@
 .reply input:focus {
   background: lightblue;
   color: var(--charcoal);
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+.reply input:focus {
+  width: 99vw;
+  transform: translateX(-13%) translateY(-60px);
+}
+.reply .reply__column:first-child,
+.reply .fa-smile,
+.reply button {
+  transition: opacity 0.1s ease-in-out;
+}
+
+.reply:focus-within {
+  transform: translateY(60px);
 }

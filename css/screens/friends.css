@@ -32,6 +32,9 @@
   color: rgba(0, 0, 0, 0.5);
   text-shadow: 0px 1px 1px rgba(241, 241, 241, 0.9);
 }
+.friends-screen__channel-header i {
+  cursor: pointer;
+}
 
 @keyframes hideSplashScreen {
   from {
