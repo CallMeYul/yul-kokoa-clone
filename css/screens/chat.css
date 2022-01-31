@@ -1,6 +1,6 @@
 #chat-screen {
   background-color: whitesmoke;
-  height: 150vh;
+  height: 100vh;
   position: relative;
 }
 #chat-screen .alt-header {
@@ -171,7 +171,7 @@
   opacity: 0;
 }
 .reply input:focus {
-  width: 99vw;
+  width: 98vw;
   transform: translateX(-13%) translateY(-60px);
 }
 .reply .reply__column:first-child,
